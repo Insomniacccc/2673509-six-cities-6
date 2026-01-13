@@ -1,14 +1,14 @@
 import React from 'react';
 import {HelmetProvider} from 'react-helmet-async';
-import {MainPage} from '../../pages/main-page.tsx';
-import {LoginPage} from '../../pages/login-page.tsx';
-import {OfferPage} from '../../pages/offer-page.tsx';
-import {NotFoundPage} from '../../pages/not-found-page.tsx';
+import {MainPage} from '../../pages/main-page/main-page.tsx';
+import {LoginPage} from '../../pages/login-page/login-page.tsx';
+import {OfferPage} from '../../pages/offer-page/offer-page.tsx';
+import {NotFoundPage} from '../../pages/not-found-page/not-found-page.tsx';
 import {Route, Routes} from 'react-router-dom';
 import {AppRouteEnum} from '../../internal/enums/app-route-enum.tsx';
 import {Authorization} from '../authorization/authorization.tsx';
 import { BrowserRouter } from 'react-router-dom';
-import {FavoritesPage} from '../../pages/favorites-page.tsx';
+import {FavoritesPage} from '../../pages/favorite-page/favorites-page.tsx';
 import {useAppSelector} from '../../store/hooks.ts';
 import {Spinner} from '../spinner/spinner.tsx';
 

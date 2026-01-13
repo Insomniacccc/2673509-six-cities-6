@@ -93,6 +93,12 @@ export const reducer = createReducer(InitialCityState, (builder) => {
         }
         return {...offer, isFavorite: action.payload.isFavorite};
       });
+      state.currentOffer.nearestOffers = state.currentOffer.nearestOffers.map((offer) => {
+        if (offer.id !== action.payload.id) {
+          return offer;
+        }
+        return {...offer, isFavorite: action.payload.isFavorite};
+      });
       if (state.currentOffer.offerInfo?.id === action.payload.id) {
         state.currentOffer.offerInfo.isFavorite = action.payload.isFavorite;
       }
