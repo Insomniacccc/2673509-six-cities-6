@@ -1,5 +1,5 @@
-import {useAppDispatch, useAppSelector} from '../../store/hooks.ts';
-import {changeCity} from '../../store/actions.ts';
+import {useAppDispatch, useAppSelector} from '../../store/hooks/hooks.ts';
+import {changeCity} from '../../store/actions/actions.ts';
 import {CityName} from '../../internal/enums/city-name-enum.tsx';
 import {Link} from 'react-router-dom';
 

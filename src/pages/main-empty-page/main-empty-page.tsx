@@ -1,8 +1,8 @@
 import React from 'react';
-import {useAppDispatch, useAppSelector} from '../../store/hooks.ts';
+import {useAppDispatch, useAppSelector} from '../../store/hooks/hooks.ts';
 import {Header} from '../../components/header/header.tsx';
 import {Cities} from '../../constants';
-import {changeCity} from '../../store/actions.ts';
+import {changeCity} from '../../store/actions/actions.ts';
 import {Link} from 'react-router-dom';
 
 export function MainEmptyPage(): React.JSX.Element {

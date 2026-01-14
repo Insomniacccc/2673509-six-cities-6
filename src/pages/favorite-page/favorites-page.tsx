@@ -1,6 +1,6 @@
 import React from 'react';
 import {Header} from '../../components/header/header.tsx';
-import {useAppSelector} from '../../store/hooks.ts';
+import {useAppSelector} from '../../store/hooks/hooks.ts';
 import {Footer} from '../../components/footer/footer.tsx';
 import {Cities} from '../../constants';
 import {AppRouteEnum} from '../../internal/enums/app-route-enum.tsx';

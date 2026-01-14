@@ -1,10 +1,10 @@
 import {Link, useNavigate} from 'react-router-dom';
 import {Offer} from '../../internal/types/offer-type.tsx';
 import React from 'react';
-import {useAppDispatch, useAppSelector} from '../../store/hooks.ts';
+import {useAppDispatch, useAppSelector} from '../../store/hooks/hooks.ts';
 import {AuthStatus} from '../../internal/enums/auth-status-enum.tsx';
 import {APIRoute} from '../../internal/enums/api-route-enum.tsx';
-import {addFavouriteAction} from '../../store/api-actions.ts';
+import {addFavouriteAction} from '../../store/api-actions/api-actions.ts';
 
 type PlaceCardProps = {
   offer: Offer;

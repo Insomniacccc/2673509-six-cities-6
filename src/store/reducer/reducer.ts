@@ -6,13 +6,13 @@ import {
   setAuthStatus, setError,
   setIsFetchOffers,
   setSortOption
-} from './actions.ts';
-import {CityName} from '../internal/enums/city-name-enum.tsx';
-import {CityOfferListType} from '../internal/types/city-offer-list-type.tsx';
-import {SortOption} from '../internal/enums/sort-option-enum.tsx';
-import {Cities} from '../constants';
-import {AuthStatus} from '../internal/enums/auth-status-enum.tsx';
-import {addFavouriteAction, getOfferInfoAction} from './api-actions.ts';
+} from '../actions/actions.ts';
+import {CityName} from '../../internal/enums/city-name-enum.tsx';
+import {CityOfferListType} from '../../internal/types/city-offer-list-type.tsx';
+import {SortOption} from '../../internal/enums/sort-option-enum.tsx';
+import {Cities} from '../../constants';
+import {AuthStatus} from '../../internal/enums/auth-status-enum.tsx';
+import {addFavouriteAction, getOfferInfoAction} from '../api-actions/api-actions.ts';
 
 export const InitialCityState: CityOfferListType = {
   city: {

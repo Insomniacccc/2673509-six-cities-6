@@ -9,7 +9,7 @@ import {AppRouteEnum} from '../../internal/enums/app-route-enum.tsx';
 import {Authorization} from '../authorization/authorization.tsx';
 import { BrowserRouter } from 'react-router-dom';
 import {FavoritesPage} from '../../pages/favorite-page/favorites-page.tsx';
-import {useAppSelector} from '../../store/hooks.ts';
+import {useAppSelector} from '../../store/hooks/hooks.ts';
 import {Spinner} from '../spinner/spinner.tsx';
 
 export function App(): React.JSX.Element {
